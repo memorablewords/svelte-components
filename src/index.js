@@ -5,7 +5,3 @@
  * - https://github.com/rollup/rollup-plugin-svelte#pkgsvelte
  * @see {@link ../package.json}
  */
-import ByeBye from './ByeByeComponent/index.svelte'
-import Hello from './HelloComponent/index.svelte'
-
-export { ByeBye, Hello }
