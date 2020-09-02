@@ -1,10 +1,14 @@
 <script>
     import Icon from './Icon/index.svelte'
+    import Text from './Text/index.svelte'
 </script>
 
 <ul>
     <li>
         <a href="#icon">Icon</a>
+    </li>
+    <li>
+        <a href="#text">Text</a>
     </li>
 </ul>
 
@@ -39,5 +43,30 @@
     <h3>Custom size</h3>
     <div id="icon-small">
         <Icon type="moon" size={24} />
+    </div>
+</section>
+
+<section section="text">
+    <h2>Text</h2>
+
+    <h3>Default</h3>
+    <div id="text-default">
+        <Text>The quick brown fox jumps over the lazy dog.</Text>
+    </div>
+
+    <h3>
+        Custom elements
+        <code>p</code>
+    </h3>
+    <div id="text-h1">
+        <Text element="h1">Quick brown fox</Text>
+    </div>
+
+    <div id="text-h2">
+        <Text element="h2">Lazy dog</Text>
+    </div>
+
+    <div id="text-p">
+        <Text element="p">The quick brown fox jumps over the lazy dog.</Text>
     </div>
 </section>
