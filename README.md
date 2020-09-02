@@ -56,6 +56,8 @@ The local server:
 ```sh
 # Install the dependencies
 npm install
+# Run the local server (required on port 5000)
+npm run dev
 # Run the test suite
 npm test
 ```
