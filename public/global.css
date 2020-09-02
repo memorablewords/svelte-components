@@ -1,14 +1,20 @@
-fieldset {
-    border: 1pt solid gray;
-    padding: 1em;
-    margin: 1em;
-    background-color: #fafafa;
+:root {
+    --light: #fafbfc;
+    --dark: #1c1f23;
+    --space: 16px;
 }
-legend {
-    color: #eee;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #aaa;
-    padding: 0.5em;
-    vertical-align: middle;
-    display: inline-block;
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+section {
+    margin: var(--space) 0;
+    border-top: 1px solid var(--dark);
+}
+
+section > * {
+    padding: var(--space);
+    margin: 0;
 }
