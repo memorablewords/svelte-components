@@ -1,7 +1,7 @@
 {
-    "name": "svelte-component-library-template",
-    "version": "0.0.1",
-    "description": "My Svelte Components",
+    "name": "memorablewords-svelte-components",
+    "version": "0.1.0",
+    "description": "A library of Svelte components maintained by Memorable Words.",
     "svelte": "src/index.js",
     "private": true,
     "scripts": {
