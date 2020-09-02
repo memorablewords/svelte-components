@@ -12,7 +12,7 @@
         "lint": "eslint --fix -c .eslintrc.js --ext .js,.svelte,.html .",
         "format:svelte": "prettier --parser html --check **/*.svelte",
         "format:js": "prettier --check **/*.js",
-        "format": "run-p format:svelte format:js",
+        "format": "run-p format:js",
         "test": "npx nightwatch"
     },
     "devDependencies": {
