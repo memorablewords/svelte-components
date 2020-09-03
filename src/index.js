@@ -7,5 +7,6 @@
  */
 
 import Icon from './Icon/index.svelte'
+import Text from './Text/index.svelte'
 
-export { Icon }
+export { Icon, Text }
