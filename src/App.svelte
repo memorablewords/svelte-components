@@ -1,7 +1,16 @@
 <script>
+    import Button from './Button/index.svelte'
     import Icon from './Icon/index.svelte'
     import Text from './Text/index.svelte'
 </script>
+
+<style>
+    :root {
+        --button-gap: 8px;
+        --button-padding: 8px;
+        --button-size: 48px;
+    }
+</style>
 
 <ul>
     <li>
@@ -11,6 +20,71 @@
         <a href="#text">Text</a>
     </li>
 </ul>
+
+<section section="button">
+    <h2>Button</h2>
+
+    <p>Depends on the following CSS variables:</p>
+    <dl>
+        <dt>
+            <code>--button-gap</code>
+        </dt>
+        <dd>
+            Gap between the different components inside the button, if there are
+            multiple.
+        </dd>
+        <dt>
+            <code>--button-padding</code>
+        </dt>
+        <dd>
+            Space on both sides of the button's content when
+            <code>relaxed</code>
+            .
+        </dd>
+        <dt>
+            <code>--button-size</code>
+        </dt>
+        <dd>Minimum size of the button.</dd>
+    </dl>
+
+    <h3>Default</h3>
+    <div id="button-default">
+        <Button title="Example button" onclick={() => alert('Example!')}>
+            <Text>Example</Text>
+        </Button>
+    </div>
+
+    <h3>With icons</h3>
+
+    <div id="button-icon">
+        <Button title="Example button" onclick={() => alert('Example!')}>
+            <Icon type="sun" size={24} />
+        </Button>
+    </div>
+    <div id="button-icon-text">
+        <Button title="Example button" onclick={() => alert('Example!')}>
+            <Icon type="moon" size={24} />
+            <Text>Example</Text>
+        </Button>
+    </div>
+    <div id="button-text-icon">
+        <Button title="Example button" onclick={() => alert('Example!')}>
+            <Text>Example</Text>
+            <Icon type="sun" size={24} />
+        </Button>
+    </div>
+
+    <h3>Relaxed</h3>
+    <div id="button-relaxed">
+        <Button
+            title="Example button"
+            onclick={() => alert('Example!')}
+            relaxed>
+            <Icon type="moon" size={24} />
+            <Text>Example</Text>
+        </Button>
+    </div>
+</section>
 
 <section section="icon">
     <h2>Icon</h2>
