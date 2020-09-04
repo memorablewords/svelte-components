@@ -1,6 +1,8 @@
 <script>
+    export let disabled = false
     export let relaxed = false
     export let title
+    export let type = 'button'
     export let onclick = () => {}
 </script>
 
@@ -24,6 +26,6 @@
     }
 </style>
 
-<button on:click={onclick} {title} type="button" class:relaxed>
+<button on:click={onclick} {title} {type} {disabled} class:relaxed>
     <slot />
 </button>
