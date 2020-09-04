@@ -10,6 +10,7 @@
         --button-gap: 8px;
         --button-padding: 8px;
         --button-size: 48px;
+        --color-text-dimmed: #888888;
         --spacer-size: var(--button-gap);
     }
 </style>
@@ -174,9 +175,26 @@
 <section section="text">
     <h2>Text</h2>
 
+    <p>Depends on the following CSS variable:</p>
+    <dl>
+        <dt>
+            <code>--color-text-dimmed</code>
+        </dt>
+        <dd>
+            Color of the text when
+            <code>dimmed</code>
+            .
+        </dd>
+    </dl>
+
     <h3>Default</h3>
     <div id="text-default">
         <Text>The quick brown fox jumps over the lazy dog.</Text>
+    </div>
+
+    <h3>Dimmed</h3>
+    <div id="text-dimmed">
+        <Text dimmed>The quick brown fox jumps over the lazy dog.</Text>
     </div>
 
     <h3>
