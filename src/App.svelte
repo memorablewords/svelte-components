@@ -3,6 +3,9 @@
     import Icon from './Icon/index.svelte'
     import Spacer from './Spacer/index.svelte'
     import Text from './Text/index.svelte'
+    import TextInput from './TextInput/index.svelte'
+
+    let value = ''
 </script>
 
 <style>
@@ -10,6 +13,7 @@
         --button-gap: 8px;
         --button-padding: 8px;
         --button-size: 48px;
+        --color-text-dimmed: #888888;
         --spacer-size: var(--button-gap);
     }
 </style>
@@ -26,6 +30,9 @@
     </li>
     <li>
         <a href="#text">Text</a>
+    </li>
+    <li>
+        <a href="#textinput">TextInput</a>
     </li>
 </ul>
 
@@ -174,9 +181,26 @@
 <section section="text">
     <h2>Text</h2>
 
+    <p>Depends on the following CSS variable:</p>
+    <dl>
+        <dt>
+            <code>--color-text-dimmed</code>
+        </dt>
+        <dd>
+            Color of the text when
+            <code>dimmed</code>
+            .
+        </dd>
+    </dl>
+
     <h3>Default</h3>
     <div id="text-default">
         <Text>The quick brown fox jumps over the lazy dog.</Text>
+    </div>
+
+    <h3>Dimmed</h3>
+    <div id="text-dimmed">
+        <Text dimmed>The quick brown fox jumps over the lazy dog.</Text>
     </div>
 
     <h3>
@@ -193,5 +217,21 @@
 
     <div id="text-p">
         <Text element="p">The quick brown fox jumps over the lazy dog.</Text>
+    </div>
+</section>
+
+<section section="textinput">
+    <h2>TextInput</h2>
+
+    <h3>Default</h3>
+    <div id="textinput-default">
+        <TextInput
+            id="username"
+            label="Username <small>(required)</small>"
+            hint="This username is the one people will use to address messages
+            to you."
+            placeholder="dapper-drake"
+            bind:value
+            required />
     </div>
 </section>

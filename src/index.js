@@ -10,5 +10,6 @@ import Button from './Button/index.svelte'
 import Icon from './Icon/index.svelte'
 import Spacer from './Spacer/index.svelte'
 import Text from './Text/index.svelte'
+import TextInput from './TextInput/index.svelte'
 
-export { Button, Icon, Spacer, Text }
+export { Button, Icon, Spacer, Text, TextInput }

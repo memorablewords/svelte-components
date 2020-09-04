@@ -1,6 +1,7 @@
 <script>
     export let element = 'span'
     export let display = 'body'
+    export let dimmed = false
 
     let body = display === 'body'
 </script>
@@ -38,22 +39,26 @@
         margin: 0;
         padding: 0;
     }
+
+    .dimmed {
+        color: var(--color-text-dimmed);
+    }
 </style>
 
 {#if element === 'h1'}
-    <h1 class:body>
+    <h1 class:body class:dimmed>
         <slot />
     </h1>
 {:else if element === 'h2'}
-    <h2 class:body>
+    <h2 class:body class:dimmed>
         <slot />
     </h2>
 {:else if element === 'p'}
-    <p class:body>
+    <p class:body class:dimmed>
         <slot />
     </p>
 {:else}
-    <span class:body>
+    <span class:body class:dimmed>
         <slot />
     </span>
 {/if}
