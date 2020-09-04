@@ -3,6 +3,9 @@
     import Icon from './Icon/index.svelte'
     import Spacer from './Spacer/index.svelte'
     import Text from './Text/index.svelte'
+    import TextInput from './TextInput/index.svelte'
+
+    let value = ''
 </script>
 
 <style>
@@ -27,6 +30,9 @@
     </li>
     <li>
         <a href="#text">Text</a>
+    </li>
+    <li>
+        <a href="#textinput">TextInput</a>
     </li>
 </ul>
 
@@ -211,5 +217,21 @@
 
     <div id="text-p">
         <Text element="p">The quick brown fox jumps over the lazy dog.</Text>
+    </div>
+</section>
+
+<section section="textinput">
+    <h2>TextInput</h2>
+
+    <h3>Default</h3>
+    <div id="textinput-default">
+        <TextInput
+            id="username"
+            label="Username <small>(required)</small>"
+            hint="This username is the one people will use to address messages
+            to you."
+            placeholder="dapper-drake"
+            bind:value
+            required />
     </div>
 </section>
