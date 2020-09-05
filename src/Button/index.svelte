@@ -22,7 +22,7 @@
     }
 
     .relaxed {
-        padding: var(--button-padding);
+        padding: 0 var(--button-padding);
     }
 </style>
 
