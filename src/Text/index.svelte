@@ -2,8 +2,10 @@
     export let element = 'span'
     export let display = 'body'
     export let dimmed = false
+    export let stacked = false
 
-    let body = display === 'body'
+    let body = display === 'body' || display === 'header'
+    let header = display === 'header'
 </script>
 
 <style>
@@ -28,6 +30,21 @@
         margin-bottom: -0.3721em;
     }
 
+    .header {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .stacked.body {
+        display: inline-block;
+        margin: 16px 0;
+    }
+
+    .stacked.header {
+        display: block;
+        margin: 24px 0 16px;
+    }
+
     h1,
     h2,
     p,
@@ -46,19 +63,19 @@
 </style>
 
 {#if element === 'h1'}
-    <h1 class:body class:dimmed>
+    <h1 class:body class:dimmed class:header class:stacked>
         <slot />
     </h1>
 {:else if element === 'h2'}
-    <h2 class:body class:dimmed>
+    <h2 class:body class:dimmed class:header class:stacked>
         <slot />
     </h2>
 {:else if element === 'p'}
-    <p class:body class:dimmed>
+    <p class:body class:dimmed class:header class:stacked>
         <slot />
     </p>
 {:else}
-    <span class:body class:dimmed>
+    <span class:body class:dimmed class:header class:stacked>
         <slot />
     </span>
 {/if}
