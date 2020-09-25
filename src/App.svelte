@@ -37,6 +37,7 @@
 </ul>
 
 <section section="button">
+    <a id="button">¶</a>
     <h2>Button</h2>
 
     <p>Depends on the following CSS variables:</p>
@@ -118,6 +119,7 @@
 </section>
 
 <section section="icon">
+    <a id="icon">¶</a>
     <h2>Icon</h2>
 
     <p>
@@ -152,6 +154,7 @@
 </section>
 
 <section section="spacer">
+    <a id="spacer">¶</a>
     <h2>Spacer</h2>
 
     <p>
@@ -179,6 +182,7 @@
 </section>
 
 <section section="text">
+    <a id="text">¶</a>
     <h2>Text</h2>
 
     <p>Depends on the following CSS variable:</p>
@@ -221,6 +225,7 @@
 </section>
 
 <section section="textinput">
+    <a id="textinput">¶</a>
     <h2>TextInput</h2>
 
     <h3>Default</h3>
