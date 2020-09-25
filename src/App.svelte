@@ -27,10 +27,11 @@
 </ul>
 
 <section section="button">
-    <a id="button">¶</a>
-    <h2>Button</h2>
+    <Text element="h2" display="display2">
+        <a id="button">Button</a>
+    </Text>
 
-    <p>Depends on the following CSS variables:</p>
+    <Text element="p">Depends on the following CSS variables:</Text>
     <dl>
         <dt>
             <code>--button-gap</code>
@@ -53,16 +54,16 @@
         <dd>Minimum size of the button.</dd>
     </dl>
 
-    <h3>Default</h3>
+    <Text element="h3" display="display4">Default</Text>
     <div id="button-default">
         <Button title="Example button" onclick={() => alert('Example!')}>
             <Text>Example</Text>
         </Button>
     </div>
 
-    <h3>With icons</h3>
+    <Text element="h3" display="display4">With icons</Text>
 
-    <p>
+    <Text element="p">
         <strong>Note:</strong>
         Until the CSS property
         <code>gap</code>
@@ -73,7 +74,7 @@
             <code>Spacer</code>
         </a>
         to separate them.
-    </p>
+    </Text>
 
     <div id="button-icon">
         <Button title="Example button" onclick={() => alert('Example!')}>
@@ -95,7 +96,7 @@
         </Button>
     </div>
 
-    <h3>Relaxed</h3>
+    <Text element="h3" display="display4">Relaxed</Text>
     <div id="button-relaxed">
         <Button
             title="Example button"
@@ -109,10 +110,11 @@
 </section>
 
 <section section="icon">
-    <a id="icon">¶</a>
-    <h2>Icon</h2>
+    <Text element="h2" display="display2">
+        <a id="icon">Icon</a>
+    </Text>
 
-    <p>
+    <Text element="p">
         <strong>Important:</strong>
         this component depends on a source of icons being accessible (e.g.
         <code>public/icons.svg</code>
@@ -125,35 +127,36 @@
         of an SVG
         <code>symbol</code>
         inside that file.
-    </p>
+    </Text>
 
-    <h3>Default</h3>
+    <Text element="h3" display="display4">Default</Text>
     <div id="icon-default">
         <Icon type="moon" />
     </div>
 
-    <h3>Illustrative</h3>
+    <Text element="h3" display="display4">Illustrative</Text>
     <div id="icon-illustrative">
         <Icon type="sun" illustrative={true} />
     </div>
 
-    <h3>Custom size</h3>
+    <Text element="h3" display="display4">Custom size</Text>
     <div id="icon-small">
         <Icon type="moon" size={24} />
     </div>
 </section>
 
 <section section="spacer">
-    <a id="spacer">¶</a>
-    <h2>Spacer</h2>
+    <Text element="h2" display="display2">
+        <a id="spacer">Spacer</a>
+    </Text>
 
-    <p>
+    <Text element="p">
         Allows to insert a space between other components when they are used in
         another component `slot` and styling is not otherwise possible. Don't
         over-use it!
-    </p>
+    </Text>
 
-    <p>Depends on the following CSS variable:</p>
+    <Text element="p">Depends on the following CSS variable:</Text>
     <dl>
         <dt>
             <code>--spacer-size</code>
@@ -161,7 +164,7 @@
         <dd>Width and height of the spacer.</dd>
     </dl>
 
-    <h3>Default</h3>
+    <Text element="h3" display="display4">Default</Text>
     <div id="spacer-default">
         <Icon type="sun" />
         <Icon type="sun" />
@@ -172,10 +175,11 @@
 </section>
 
 <section section="text">
-    <a id="text">¶</a>
-    <h2>Text</h2>
+    <Text element="h2" display="display2">
+        <a id="text">Text</a>
+    </Text>
 
-    <p>Depends on the following CSS variable:</p>
+    <Text element="p">Depends on the following CSS variable:</Text>
     <dl>
         <dt>
             <code>--color-text-dimmed</code>
@@ -187,20 +191,21 @@
         </dd>
     </dl>
 
-    <h3>Default</h3>
+    <Text element="h3" display="display4">Default</Text>
     <div id="text-default">
         <Text>The quick brown fox jumps over the lazy dog.</Text>
     </div>
 
-    <h3>Dimmed</h3>
+    <Text element="h3" display="display4">Dimmed</Text>
     <div id="text-dimmed">
         <Text dimmed>The quick brown fox jumps over the lazy dog.</Text>
     </div>
 
-    <h3>
+    <Text element="h3" display="display4">
         Custom elements
         <code>p</code>
-    </h3>
+    </Text>
+
     <div id="text-h1">
         <Text element="h1">Quick brown fox</Text>
     </div>
@@ -213,7 +218,7 @@
         <Text element="p">The quick brown fox jumps over the lazy dog.</Text>
     </div>
 
-    <h3>Typography</h3>
+    <Text element="h3" display="display4">Typography</Text>
 
     <div id="text-body">
         <Text display="body">The quick brown fox jumps over the lazy dog.</Text>
@@ -263,10 +268,11 @@
 </section>
 
 <section section="textinput">
-    <a id="textinput">¶</a>
-    <h2>TextInput</h2>
+    <Text element="h2" display="display2">
+        <a id="textinput">TextInput</a>
+    </Text>
 
-    <h3>Default</h3>
+    <Text element="h3" display="display4">Default</Text>
     <div id="textinput-default">
         <TextInput
             id="username"
