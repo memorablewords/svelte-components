@@ -8,16 +8,6 @@
     let value = ''
 </script>
 
-<style>
-    :root {
-        --button-gap: 8px;
-        --button-padding: 8px;
-        --button-size: 48px;
-        --color-text-dimmed: #888888;
-        --spacer-size: var(--button-gap);
-    }
-</style>
-
 <ul>
     <li>
         <a href="#button">Button</a>
