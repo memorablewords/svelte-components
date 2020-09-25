@@ -11,6 +11,7 @@
 
 body {
     background-color: var(--light);
+    background: url("./rule.png") repeat;
     color: var(--dark);
 }
 
