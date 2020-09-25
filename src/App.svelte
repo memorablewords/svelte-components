@@ -212,6 +212,54 @@
     <div id="text-p">
         <Text element="p">The quick brown fox jumps over the lazy dog.</Text>
     </div>
+
+    <h3>Typography</h3>
+
+    <div id="text-body">
+        <Text display="body">The quick brown fox jumps over the lazy dog.</Text>
+    </div>
+
+    <div id="text-caption">
+        <Text display="caption">
+            The quick brown fox jumps over the lazy dog.
+        </Text>
+    </div>
+
+    <div id="text-display1">
+        <Text display="display1">
+            The quick brown fox jumps over the lazy dog.
+        </Text>
+    </div>
+
+    <div id="text-display2">
+        <Text display="display2">
+            The quick brown fox jumps over the lazy dog.
+        </Text>
+    </div>
+
+    <div id="text-display3">
+        <Text display="display3">
+            The quick brown fox jumps over the lazy dog.
+        </Text>
+    </div>
+
+    <div id="text-display4">
+        <Text display="display4">
+            The quick brown fox jumps over the lazy dog.
+        </Text>
+    </div>
+
+    <div id="text-display5">
+        <Text display="display5">
+            The quick brown fox jumps over the lazy dog.
+        </Text>
+    </div>
+
+    <div id="text-display6">
+        <Text display="display6">
+            The quick brown fox jumps over the lazy dog.
+        </Text>
+    </div>
 </section>
 
 <section section="textinput">

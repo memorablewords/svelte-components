@@ -13,6 +13,8 @@ body {
     background-color: var(--light);
     background: url("./rule.png") repeat;
     color: var(--dark);
+    /* See https://polaris.shopify.com/design/typography#section-font-stack */
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Inter, sans-serif;
 }
 
 section {
@@ -23,4 +25,180 @@ section {
 section > * {
     padding: var(--space);
     margin: 0;
+}
+
+/* See https://seek-oss.github.io/capsize */
+
+.caption,
+.body {
+    font-weight: 400;
+}
+
+.caption {
+    font-size: 13.75px;
+    line-height: 16px;
+    padding: 0.05px 0;
+}
+
+.caption::before {
+    content: "";
+    margin-top: -0.2218em;
+    display: block;
+    height: 0;
+}
+
+.caption::after {
+    content: "";
+    margin-bottom: -0.2218em;
+    display: block;
+    height: 0;
+}
+
+.body {
+    font-size: 16.5px;
+    line-height: 24px;
+    padding: 0.05px 0;
+}
+
+.body::before {
+    content: "";
+    margin-top: -0.3667em;
+    display: block;
+    height: 0;
+}
+
+.body::after {
+    content: "";
+    margin-bottom: -0.3667em;
+    display: block;
+    height: 0;
+}
+
+.display1,
+.display2,
+.display3,
+.display4,
+.display5,
+.display6 {
+    font-weight: 700;
+}
+
+.display6 {
+    font-size: 16.5px;
+    line-height: 24px;
+    padding: 0.05px 0;
+}
+
+.display6::before {
+    content: "";
+    margin-top: -0.3667em;
+    display: block;
+    height: 0;
+}
+
+.display6::after {
+    content: "";
+    margin-bottom: -0.3667em;
+    display: block;
+    height: 0;
+}
+
+.display5 {
+    font-size: 20.625px;
+    line-height: 32px;
+    padding: 0.05px 0;
+}
+
+.display5::before {
+    content: "";
+    margin-top: -0.4145em;
+    display: block;
+    height: 0;
+}
+
+.display5::after {
+    content: "";
+    margin-bottom: -0.4145em;
+    display: block;
+    height: 0;
+}
+
+.display4 {
+    font-size: 24.75px;
+    line-height: 32px;
+    padding: 0.05px 0;
+}
+
+.display4::before {
+    content: "";
+    margin-top: -0.2848em;
+    display: block;
+    height: 0;
+}
+
+.display4::after {
+    content: "";
+    margin-bottom: -0.2848em;
+    display: block;
+    height: 0;
+}
+
+.display3 {
+    font-size: 31.625px;
+    line-height: 48px;
+    padding: 0.05px 0;
+}
+
+.display3::before {
+    content: "";
+    margin-top: -0.3968em;
+    display: block;
+    height: 0;
+}
+
+.display3::after {
+    content: "";
+    margin-bottom: -0.3968em;
+    display: block;
+    height: 0;
+}
+
+.display2 {
+    font-size: 39.875px;
+    line-height: 56px;
+    padding: 0.05px 0;
+}
+
+.display2::before {
+    content: "";
+    margin-top: -0.3398em;
+    display: block;
+    height: 0;
+}
+
+.display2::after {
+    content: "";
+    margin-bottom: -0.3398em;
+    display: block;
+    height: 0;
+}
+
+.display1 {
+    font-size: 56.375px;
+    line-height: 72px;
+    padding: 0.05px 0;
+}
+
+.display1::before {
+    content: "";
+    margin-top: -0.2758em;
+    display: block;
+    height: 0;
+}
+
+.display1::after {
+    content: "";
+    margin-bottom: -0.2758em;
+    display: block;
+    height: 0;
 }
