@@ -19,6 +19,10 @@
     <h2 class:dimmed class={display} class:stacked>
         <slot />
     </h2>
+{:else if element === 'h3'}
+    <h3 class:dimmed class={display} class:stacked>
+        <slot />
+    </h3>
 {:else if element === 'p'}
     <p class:dimmed class={display} class:stacked>
         <slot />

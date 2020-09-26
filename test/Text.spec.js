@@ -32,6 +32,12 @@ describe('Text', () => {
         browser.assert.elementPresent('#text-h2 h2')
     })
 
+    it('is a h3 when element is h3', async (browser) => {
+        await browser.url('http://localhost:5000/#/')
+        await browser.waitForElementVisible('#text-h3')
+        browser.assert.elementPresent('#text-h3 h3')
+    })
+
     it('supports display6', async (browser) => {
         await browser.url('http://localhost:5000/#/')
         await browser.waitForElementVisible('#text-display6')
