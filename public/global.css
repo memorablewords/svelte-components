@@ -11,14 +11,14 @@
 
 body {
     background-color: var(--light);
-    background: url("./rule.png") repeat;
+    background: url('./rule.png') repeat;
     color: var(--dark);
     /* See https://polaris.shopify.com/design/typography#section-font-stack */
-    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Inter, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Inter,
+        sans-serif;
 }
 
 section {
-    margin: var(--space) 0;
     border-top: 1px solid var(--dark);
 }
 
@@ -41,14 +41,14 @@ section > * {
 }
 
 .caption::before {
-    content: "";
+    content: '';
     margin-top: -0.2218em;
     display: block;
     height: 0;
 }
 
 .caption::after {
-    content: "";
+    content: '';
     margin-bottom: -0.2218em;
     display: block;
     height: 0;
@@ -61,14 +61,14 @@ section > * {
 }
 
 .body::before {
-    content: "";
+    content: '';
     margin-top: -0.3667em;
     display: block;
     height: 0;
 }
 
 .body::after {
-    content: "";
+    content: '';
     margin-bottom: -0.3667em;
     display: block;
     height: 0;
@@ -90,14 +90,14 @@ section > * {
 }
 
 .display6::before {
-    content: "";
+    content: '';
     margin-top: -0.3667em;
     display: block;
     height: 0;
 }
 
 .display6::after {
-    content: "";
+    content: '';
     margin-bottom: -0.3667em;
     display: block;
     height: 0;
@@ -110,14 +110,14 @@ section > * {
 }
 
 .display5::before {
-    content: "";
+    content: '';
     margin-top: -0.4145em;
     display: block;
     height: 0;
 }
 
 .display5::after {
-    content: "";
+    content: '';
     margin-bottom: -0.4145em;
     display: block;
     height: 0;
@@ -130,14 +130,14 @@ section > * {
 }
 
 .display4::before {
-    content: "";
+    content: '';
     margin-top: -0.2848em;
     display: block;
     height: 0;
 }
 
 .display4::after {
-    content: "";
+    content: '';
     margin-bottom: -0.2848em;
     display: block;
     height: 0;
@@ -150,14 +150,14 @@ section > * {
 }
 
 .display3::before {
-    content: "";
+    content: '';
     margin-top: -0.3968em;
     display: block;
     height: 0;
 }
 
 .display3::after {
-    content: "";
+    content: '';
     margin-bottom: -0.3968em;
     display: block;
     height: 0;
@@ -170,14 +170,14 @@ section > * {
 }
 
 .display2::before {
-    content: "";
+    content: '';
     margin-top: -0.3398em;
     display: block;
     height: 0;
 }
 
 .display2::after {
-    content: "";
+    content: '';
     margin-bottom: -0.3398em;
     display: block;
     height: 0;
@@ -190,15 +190,28 @@ section > * {
 }
 
 .display1::before {
-    content: "";
+    content: '';
     margin-top: -0.2758em;
     display: block;
     height: 0;
 }
 
 .display1::after {
-    content: "";
+    content: '';
     margin-bottom: -0.2758em;
     display: block;
     height: 0;
+}
+
+.vertical.stack > * {
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.horizontal.stack {
+    display: flex;
+    align-items: flex-start;
+}
+.horizontal.stack > * {
+    margin-right: 16px;
 }

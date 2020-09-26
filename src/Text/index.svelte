@@ -6,15 +6,6 @@
 </script>
 
 <style>
-    .stacked.body {
-        display: inline-block;
-        margin: 16px 0;
-    }
-
-    .stacked.header {
-        display: block;
-        margin: 24px 0 16px;
-    }
     .dimmed {
         color: var(--color-text-dimmed);
     }
